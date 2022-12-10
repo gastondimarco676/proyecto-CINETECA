@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CINETECA</title>
+  <script src="https://kit.fontawesome.com/15a333e20e.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+
+
+  </header>
+
+
+
+  <!--button onclick="window.modal.showModal();">Abrir ventana modal</button-->
+  <div>
+    <button id="abrirModal"><img src="img/carrito icono.png" id="carritoIcono"> Carrito</button>
+    <button id="boton-carrito"><span id="contadorCarrito">0</span></button>
+  </div>
+
+  <dialog id="modal">
+    <h3 id="carrito">CARRITO</h3>
+    <div id="carrito-contenedor">
+    </div>
+
+    <div>
+      <button id="vaciar-carrito">Vaciar Carrito</button>
+      <button id="cerrarModal">Cerrar Carrito</button>
+
+      <p class="precioProducto">Precio total $<span id="precioTotal">0</span></p>
+      <button id="comprar">Comprar</button>
+    </div>
+
+    </div>
+
+  </dialog>
+
+  <!--Ecommerce-->
+  <div class="contenedor">
+    <div id="titulo">
+      <h1 id="h1">CINETECA</h1>
+      <h2>Tu lugar para ver Cine Clásico</h2>
+    </div>
+
+
+    <div class="carrousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="copete">El Padrino 2 - 1974</p>
+            <img src="img/slider El Padrino 2.bak.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <p class="copete">Night and the City - 1950</p>
+            <img src="img/sliderNightandthecity.bak2.png" class="d-block w-100 ">
+          </div>
+          <div class="carousel-item">
+            <p class="copete">Leave Her to Heaven - 1945</p>
+            <img src="img/slider leaveher2.bak.jpg" class="d-block w-100 ">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <p id="prologo">"El cine es como el prólogo de un futuro maravilloso". Daniel Salzano</p>
+
+  </div>
+
+  <h6 id="catalogo">CATÁLOGO</h6>
+
+  <main id="contenedor-peliculas"></main>
+
+  <!--input type="search" id="peliBuscada" name="Qué película buscás?"
+      placeholder="Película, autor, año...">
+
+    <input type="submit" value="Buscar" id="buscador"-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="peliculas.js"></script>
+</body>
+
+</html>
